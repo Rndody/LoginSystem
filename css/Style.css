@@ -1,0 +1,60 @@
+:root {
+    --blue: #17A2B8;
+    --dark-blue: #24353F;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--dark-blue);
+}
+
+.container {
+    /* box-shadow:5px 10px #6296b4b2; */
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.403) !important;
+}
+
+input {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+}
+
+input:focus {
+    border: 1px solid var(--blue) !important;
+    outline: none;
+}
+::placeholder{
+    color: var(--white);
+}
+
+button {
+    background-color: transparent;
+}
+
+h1 {
+    color: var(--blue);
+}
+
+p {
+    color: var(--white);
+
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline solid var(--white);
+}
+
+.validation{
+    color: red;
+    font-size: smaller;
+    font-style: oblique;
+}
