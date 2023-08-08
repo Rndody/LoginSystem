@@ -171,7 +171,8 @@ function savedEmailAndPassword() {
             else {
                 exists = 1;
             
-                userNameWelcome = usersContainer[i].userName;
+                // userNameWelcome = usersContainer[i].userName;
+                localStorage.setItem("welcomeUserName", usersContainer[i].userName);
                 i++;
             }
         }
@@ -206,6 +207,8 @@ function login() {
 
 var h2Welcome = document.getElementById("h2Welcome");
 if (h2Welcome != null) {
+    userNameWelcome=localStorage.getItem("welcomeUserName");
+
     h2Welcome.innerHTML = "Welcome " + userNameWelcome;
 }
 
